@@ -1,21 +1,17 @@
 # react-data-table
 
-# react-data-table
+Small accessible, filterable and sortable contact table.
 
-Start week: 11.
+## Development
 
-## Required deliverables
-- English README and architecture overview
-- Reproducible local setup without Docker
-- Tests and CI
-- Meaningful demo and issue-based PR history
+Install Node.js 20+ and run:
 
-## Suggested first issues
-1. Bootstrap repo, quality tooling, CI.
-2. Implement a minimal end-to-end vertical slice.
-3. Add integration and failure tests.
-4. Write usage docs, demo and release.
+```sh
+npm install
+npm test
+npm run build
+```
 
-Define project-specific acceptance criteria before coding.
+## Architecture
 
-Development and tests are local-first; Docker, live services, and production credentials are not required.
+The table is a typed React component. It receives data via props; filtering and sorting are local and require no service or credentials. Native HTML table semantics and buttons preserve keyboard access.
